@@ -9,13 +9,16 @@
  */
 angular.module('fundMe')
   .service('send', function ($http) {
-    var bronze = function() {
+    var url = 'http://old-anna-nr.mybluemix.net/fundMe';
+
+    var bronze = function(team) {
       console.log('bronze');
       $http({
         method: 'POST',
-        url: 'http://anna-nr.mybluemix.net/fundMe',
+        url: url,
         data: {
-          medal: 'bronze'
+          medal: 'bronze',
+          team: team
         }
       }).then(function successCallback(response) {
         console.log(response);
@@ -24,12 +27,13 @@ angular.module('fundMe')
       });
     };
 
-    var silver = function() {
+    var silver = function(team) {
       $http({
         method: 'POST',
-        url: 'http://anna-nr.mybluemix.net/fundMe',
+        url: url,
         data: {
-          medal: 'silver'
+          medal: 'silver',
+          team: team
         }
       }).then(function successCallback(response) {
         console.log(response);
@@ -38,12 +42,13 @@ angular.module('fundMe')
       });
     };
 
-    var gold = function() {
+    var gold = function(team) {
       $http({
         method: 'POST',
-        url: 'http://anna-nr.mybluemix.net/fundMe',
+        url: url,
         data: {
-          medal: 'gold'
+          medal: 'gold',
+          team: team
         }
       }).then(function successCallback(response) {
         console.log(response);

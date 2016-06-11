@@ -6,7 +6,7 @@
 <hr>
 
 <div class="projects">
-  <div ng-repeat="project in projects" ui-sref="project1" class="tile">
+  <div ng-repeat="project in projects" ui-sref="{{project.state}}" class="tile">
     <h2 class="project-name">
       {{project.name}}
     </h2>
