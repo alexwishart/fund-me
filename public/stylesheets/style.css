@@ -140,6 +140,7 @@ h3, h4 {
   font-size: 42px;
   font-weight: 200;
   cursor: pointer;
+  border: none;
 }
 
 .circle {
