@@ -9,18 +9,26 @@
  */
 angular.module('fundMe')
   .controller('Project1Ctrl', function ($scope, $http, send, donations) {
+    var teamName = 'project1';
+
     $scope.sendBronze = function() {
-      send.bronze('project1');
+      send.bronze(teamName);
     };
     $scope.sendSilver = function() {
-      send.silver('project1');
+      send.silver(teamName);
     };
     $scope.sendGold = function() {
-      send.gold('project1');
+      send.gold(teamName);
     };
-    donations.get('project1').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
+    donations.get().then(function(response) {
+      console.log(response);
+
+      for (var i = 0; i < response.data.length; ++i) {
+        if (response.data[i][0] === teamName) {
+          $scope.raised = response.data[i][1];
+        }
+      }
+
     });
   })
   .controller('AardvarksCtrl', function ($scope, $http, send, donations) {
