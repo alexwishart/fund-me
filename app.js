@@ -20,6 +20,11 @@ var bodyParser = require('body-parser');
 // create a new express server
 var app = express();
 
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
+
+app.io = io;
+
 // require
 //require('./server/routes')(app);
 
@@ -32,19 +37,25 @@ app.use('/bower_components', express.static(__dirname + '/public/bower_component
 // app.use('/fonts', express.static(__dirname + '/public/fonts'));
 app.use('/stylesheets', express.static(__dirname + '/public/stylesheets'));
 app.use('/images', express.static(__dirname + '/public/images'));
+app.use('/node_modules', express.static(__dirname + '/node_modules'));
 
 // This route deals enables HTML5Mode by forwarding missing files to the index.html
-app.all('/*', function(req, res) {
+app.get('/*', function(req, res) {
     res.sendfile('./public/index.html');
 });
 
 app.use(bodyParser.json());
 
+app.post('/thankyou', function(req, res){
+  req.app.io.emit('typopup', {key: "value"} );
+  res.end();
+});
+
 // get the app environment from Cloud Foundry
 var appEnv = cfenv.getAppEnv();
 
 // start server on the specified port and binding host
-app.listen(appEnv.port, function() {
+server.listen(appEnv.port, function() {
 
     // print a message when the server starts listening
     console.log("server starting on " + appEnv.url);
