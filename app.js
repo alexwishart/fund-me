@@ -13,8 +13,6 @@ var express = require('express');
 // for more info, see: https://www.npmjs.com/package/cfenv
 var cfenv = require('cfenv');
 
-var cloudant = require('./server/cloudant');
-
 var bodyParser = require('body-parser');
 
 // create a new express server
@@ -41,7 +39,7 @@ app.use('/node_modules', express.static(__dirname + '/node_modules'));
 
 // This route deals enables HTML5Mode by forwarding missing files to the index.html
 app.get('/*', function(req, res) {
-    res.sendfile('./public/index.html');
+  res.sendfile('./public/index.html');
 });
 
 app.use(bodyParser.json());
@@ -57,6 +55,6 @@ var appEnv = cfenv.getAppEnv();
 // start server on the specified port and binding host
 server.listen(appEnv.port, function() {
 
-    // print a message when the server starts listening
-    console.log("server starting on " + appEnv.url);
+  // print a message when the server starts listening
+  console.log("server starting on " + appEnv.url);
 });

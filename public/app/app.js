@@ -34,16 +34,13 @@ var app = angular.module('fundMe', [
           controller: 'AardvarksCtrl'
         },
         'about@aardvarks': {
-          templateUrl: 'app/projects/aardvarks/about.html',
-          controller: 'AardvarksCtrl'
+          templateUrl: 'app/projects/aardvarks/about.html'
          },
         'raised@aardvarks': {
-          templateUrl: 'app/projects/aardvarks/raised.html',
-          controller: 'AardvarksCtrl'
+          templateUrl: 'app/projects/aardvarks/raised.html'
         },
         'donate@aardvarks': {
-          templateUrl: 'app/projects/aardvarks/donate.html',
-          controller: 'AardvarksCtrl'
+          templateUrl: 'app/projects/aardvarks/donate.html'
         }
       }
     })
@@ -55,16 +52,13 @@ var app = angular.module('fundMe', [
           controller: 'BadgersCtrl'
         },
         'about@badgers': {
-          templateUrl: 'app/projects/badgers/about.html',
-          controller: 'BadgersCtrl'
+          templateUrl: 'app/projects/badgers/about.html'
          },
         'raised@badgers': {
-          templateUrl: 'app/projects/badgers/raised.html',
-          controller: 'BadgersCtrl'
+          templateUrl: 'app/projects/badgers/raised.html'
         },
         'donate@badgers': {
-          templateUrl: 'app/projects/badgers/donate.html',
-          controller: 'BadgersCtrl'
+          templateUrl: 'app/projects/badgers/donate.html'
         }
       }
     })
@@ -76,16 +70,13 @@ var app = angular.module('fundMe', [
           controller: 'CamelsCtrl'
         },
         'about@cows': {
-          templateUrl: 'app/projects/cows/about.html',
-          controller: 'CamelsCtrl'
+          templateUrl: 'app/projects/cows/about.html'
          },
         'raised@cows': {
-          templateUrl: 'app/projects/cows/raised.html',
-          controller: 'CamelsCtrl'
+          templateUrl: 'app/projects/cows/raised.html'
         },
         'donate@cows': {
-          templateUrl: 'app/projects/cows/donate.html',
-          controller: 'CamelsCtrl'
+          templateUrl: 'app/projects/cows/donate.html'
         }
       }
     })
@@ -97,16 +88,13 @@ var app = angular.module('fundMe', [
           controller: 'DogsCtrl'
         },
         'about@dogs': {
-          templateUrl: 'app/projects/dogs/about.html',
-          controller: 'DogsCtrl'
+          templateUrl: 'app/projects/dogs/about.html'
          },
         'raised@dogs': {
-          templateUrl: 'app/projects/dogs/raised.html',
-          controller: 'DogsCtrl'
+          templateUrl: 'app/projects/dogs/raised.html'
         },
         'donate@dogs': {
-          templateUrl: 'app/projects/dogs/donate.html',
-          controller: 'DogsCtrl'
+          templateUrl: 'app/projects/dogs/donate.html'
         }
       }
     })
@@ -118,16 +106,13 @@ var app = angular.module('fundMe', [
           controller: 'ElephantsCtrl'
         },
         'about@elephants': {
-          templateUrl: 'app/projects/elephants/about.html',
-          controller: 'ElephantsCtrl'
+          templateUrl: 'app/projects/elephants/about.html'
          },
         'raised@elephants': {
-          templateUrl: 'app/projects/elephants/raised.html',
-          controller: 'ElephantsCtrl'
+          templateUrl: 'app/projects/elephants/raised.html'
         },
         'donate@elephants': {
-          templateUrl: 'app/projects/elephants/donate.html',
-          controller: 'ElephantsCtrl'
+          templateUrl: 'app/projects/elephants/donate.html'
         }
       }
     })
@@ -139,16 +124,13 @@ var app = angular.module('fundMe', [
           controller: 'FoxesCtrl'
         },
         'about@foxes': {
-          templateUrl: 'app/projects/foxes/about.html',
-          controller: 'FoxesCtrl'
+          templateUrl: 'app/projects/foxes/about.html'
          },
         'raised@foxes': {
-          templateUrl: 'app/projects/foxes/raised.html',
-          controller: 'FoxesCtrl'
+          templateUrl: 'app/projects/foxes/raised.html'
         },
         'donate@foxes': {
-          templateUrl: 'app/projects/foxes/donate.html',
-          controller: 'FoxesCtrl'
+          templateUrl: 'app/projects/foxes/donate.html'
         }
       }
     })
@@ -160,16 +142,13 @@ var app = angular.module('fundMe', [
           controller: 'GorillasCtrl'
         },
         'about@gorillas': {
-          templateUrl: 'app/projects/gorillas/about.html',
-          controller: 'GorillasCtrl'
+          templateUrl: 'app/projects/gorillas/about.html'
          },
         'raised@gorillas': {
-          templateUrl: 'app/projects/gorillas/raised.html',
-          controller: 'GorillasCtrl'
+          templateUrl: 'app/projects/gorillas/raised.html'
         },
         'donate@gorillas': {
-          templateUrl: 'app/projects/gorillas/donate.html',
-          controller: 'GorillasCtrl'
+          templateUrl: 'app/projects/gorillas/donate.html'
         }
       }
     })
@@ -181,16 +160,13 @@ var app = angular.module('fundMe', [
           controller: 'HipposCtrl'
         },
         'about@hens': {
-          templateUrl: 'app/projects/hens/about.html',
-          controller: 'HipposCtrl'
+          templateUrl: 'app/projects/hens/about.html'
          },
         'raised@hens': {
-          templateUrl: 'app/projects/hens/raised.html',
-          controller: 'HipposCtrl'
+          templateUrl: 'app/projects/hens/raised.html'
         },
         'donate@hens': {
-          templateUrl: 'app/projects/hens/donate.html',
-          controller: 'HipposCtrl'
+          templateUrl: 'app/projects/hens/donate.html'
         }
       }
     })
@@ -202,16 +178,13 @@ var app = angular.module('fundMe', [
           controller: 'IguanasCtrl'
         },
         'about@iguanas': {
-          templateUrl: 'app/projects/iguanas/about.html',
-          controller: 'IguanasCtrl'
+          templateUrl: 'app/projects/iguanas/about.html'
          },
         'raised@iguanas': {
-          templateUrl: 'app/projects/iguanas/raised.html',
-          controller: 'IguanasCtrl'
+          templateUrl: 'app/projects/iguanas/raised.html'
         },
         'donate@iguanas': {
-          templateUrl: 'app/projects/iguanas/donate.html',
-          controller: 'IguanasCtrl'
+          templateUrl: 'app/projects/iguanas/donate.html'
         }
       }
     })
@@ -223,16 +196,13 @@ var app = angular.module('fundMe', [
           controller: 'JaguarsCtrl'
         },
         'about@jaguars': {
-          templateUrl: 'app/projects/jaguars/about.html',
-          controller: 'JaguarsCtrl'
+          templateUrl: 'app/projects/jaguars/about.html'
          },
         'raised@jaguars': {
-          templateUrl: 'app/projects/jaguars/raised.html',
-          controller: 'JaguarsCtrl'
+          templateUrl: 'app/projects/jaguars/raised.html'
         },
         'donate@jaguars': {
-          templateUrl: 'app/projects/jaguars/donate.html',
-          controller: 'JaguarsCtrl'
+          templateUrl: 'app/projects/jaguars/donate.html'
         }
       }
     })
@@ -244,16 +214,13 @@ var app = angular.module('fundMe', [
           controller: 'KoalasCtrl'
         },
         'about@koalas': {
-          templateUrl: 'app/projects/koalas/about.html',
-          controller: 'KoalasCtrl'
+          templateUrl: 'app/projects/koalas/about.html'
          },
         'raised@koalas': {
-          templateUrl: 'app/projects/koalas/raised.html',
-          controller: 'KoalasCtrl'
+          templateUrl: 'app/projects/koalas/raised.html'
         },
         'donate@koalas': {
-          templateUrl: 'app/projects/koalas/donate.html',
-          controller: 'KoalasCtrl'
+          templateUrl: 'app/projects/koalas/donate.html'
         }
       }
     })
@@ -265,16 +232,13 @@ var app = angular.module('fundMe', [
           controller: 'LlamasCtrl'
         },
         'about@llamas': {
-          templateUrl: 'app/projects/llamas/about.html',
-          controller: 'LlamasCtrl'
+          templateUrl: 'app/projects/llamas/about.html'
          },
         'raised@llamas': {
-          templateUrl: 'app/projects/llamas/raised.html',
-          controller: 'LlamasCtrl'
+          templateUrl: 'app/projects/llamas/raised.html'
         },
         'donate@llamas': {
-          templateUrl: 'app/projects/llamas/donate.html',
-          controller: 'LlamasCtrl'
+          templateUrl: 'app/projects/llamas/donate.html'
         }
       }
     })
@@ -286,16 +250,13 @@ var app = angular.module('fundMe', [
           controller: 'MonkeysCtrl'
         },
         'about@monkeys': {
-          templateUrl: 'app/projects/monkeys/about.html',
-          controller: 'MonkeysCtrl'
+          templateUrl: 'app/projects/monkeys/about.html'
          },
         'raised@monkeys': {
-          templateUrl: 'app/projects/monkeys/raised.html',
-          controller: 'MonkeysCtrl'
+          templateUrl: 'app/projects/monkeys/raised.html'
         },
         'donate@monkeys': {
-          templateUrl: 'app/projects/monkeys/donate.html',
-          controller: 'MonkeysCtrl'
+          templateUrl: 'app/projects/monkeys/donate.html'
         }
       }
     })
@@ -307,16 +268,13 @@ var app = angular.module('fundMe', [
           controller: 'NewtsCtrl'
         },
         'about@narwhals': {
-          templateUrl: 'app/projects/narwhals/about.html',
-          controller: 'NewtsCtrl'
+          templateUrl: 'app/projects/narwhals/about.html'
          },
         'raised@narwhals': {
-          templateUrl: 'app/projects/narwhals/raised.html',
-          controller: 'NewtsCtrl'
+          templateUrl: 'app/projects/narwhals/raised.html'
         },
         'donate@narwhals': {
-          templateUrl: 'app/projects/narwhals/donate.html',
-          controller: 'NewtsCtrl'
+          templateUrl: 'app/projects/narwhals/donate.html'
         }
       }
     })
@@ -328,16 +286,13 @@ var app = angular.module('fundMe', [
           controller: 'Project1Ctrl'
         },
         'about@project1': {
-          templateUrl: 'app/projects/project1/project1.about.html',
-          controller: 'Project1Ctrl'
+          templateUrl: 'app/projects/project1/project1.about.html'
          },
         'raised@project1': {
-          templateUrl: 'app/projects/project1/project1.raised.html',
-          controller: 'Project1Ctrl'
+          templateUrl: 'app/projects/project1/project1.raised.html'
         },
         'donate@project1': {
-          templateUrl: 'app/projects/project1/project1.donate.html',
-          controller: 'Project1Ctrl'
+          templateUrl: 'app/projects/project1/project1.donate.html'
         }
       }
     });

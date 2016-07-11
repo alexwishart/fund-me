@@ -1,6 +1,6 @@
-var socket = io.connect('http://localhost:6001');
+var socket = io.connect();
 
-socket.on('typopup', function(data){
+socket.on('typopup', function(data) {
   $('#myModal').modal('show');
   setTimeout(function() {$('#myModal').modal('hide');}, 4000);
 });

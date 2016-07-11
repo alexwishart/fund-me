@@ -87,7 +87,7 @@
     <button class="square bronze">Bronze</button>
   </div>
   <div class="col-md-6">
-    <pre><code>&lt;button class=&quot;square bronze&quot;&gt;Bronze&lt;/button&gt;</code></pre>
+    <pre><code>&lt;button class=&quot;square bronze&quot; ng-click="sendBronze()"&gt;Bronze&lt;/button&gt;</code></pre>
   </div>
 </div>
 
@@ -98,7 +98,7 @@
     <button class="rounded silver">Silver</button>
   </div>
   <div class="col-md-6">
-    <pre><code>&lt;button class=&quot;rounded silver&quot;&gt;Silver&lt;/button&gt;</code></pre>
+    <pre><code>&lt;button class=&quot;rounded silver&quot; ng-click="sendSilver()"&gt;Silver&lt;/button&gt;</code></pre>
   </div>
 </div>
 
@@ -109,7 +109,7 @@
     <button class="circle gold">Gold</button>
   </div>
   <div class="col-md-6">
-    <pre><code>&lt;button class=&quot;circle gold&quot;&gt;Gold&lt;/button&gt;</code></pre>
+    <pre><code>&lt;button class=&quot;circle gold&quot; ng-click="sendGold()"&gt;Gold&lt;/button&gt;</code></pre>
   </div>
 </div>
 
@@ -121,6 +121,28 @@
   </div>
   <div class="col-md-6">
     <pre><code>&lt;img src=&quot;images/rubix.png&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;</code></pre>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-6">
+    5 donations so far!
+  </div>
+  <div class="col-md-6">
+    <pre><code ng-non-bindable>{{donations}} donations so far!</code></pre>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-6">
+    £25 raised
+  </div>
+  <div class="col-md-6">
+    <pre><code ng-non-bindable>£{{raised}} raised</code></pre>
   </div>
 </div>
 

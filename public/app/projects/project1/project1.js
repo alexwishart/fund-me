@@ -31,7 +31,7 @@ angular.module('fundMe')
 
     });
   })
-  .controller('AardvarksCtrl', function ($scope, $http, send, donations) {
+  .controller('AardvarksCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('aardvarks');
     };
@@ -41,12 +41,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('aardvarks');
     };
-    donations.get('aardvarks').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('aardvarks').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('BadgersCtrl', function ($scope, $http, send, donations) {
+  .controller('BadgersCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('badgers');
     };
@@ -56,12 +58,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('badgers');
     };
-    donations.get('badgers').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('badgers').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('CamelsCtrl', function ($scope, $http, send, donations) {
+  .controller('CamelsCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('camels');
     };
@@ -71,12 +75,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('camels');
     };
-    donations.get('camels').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('camels').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('DogsCtrl', function ($scope, $http, send, donations) {
+  .controller('DogsCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('dogs');
     };
@@ -86,12 +92,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('dogs');
     };
-    donations.get('dogs').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('dogs').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('ElephantsCtrl', function ($scope, $http, send, donations) {
+  .controller('ElephantsCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('elephants');
     };
@@ -101,12 +109,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('elephants');
     };
-    donations.get('elephants').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('elephants').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('FoxesCtrl', function ($scope, $http, send, donations) {
+  .controller('FoxesCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('foxes');
     };
@@ -116,12 +126,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('foxes');
     };
-    donations.get('foxes').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('foxes').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('GorillasCtrl', function ($scope, $http, send, donations) {
+  .controller('GorillasCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('gorillas');
     };
@@ -131,12 +143,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('gorillas');
     };
-    donations.get('gorillas').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('gorillas').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('HipposCtrl', function ($scope, $http, send, donations) {
+  .controller('HipposCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('hippos');
     };
@@ -146,12 +160,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('hippos');
     };
-    donations.get('hippos').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('hippos').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('IguanasCtrl', function ($scope, $http, send, donations) {
+  .controller('IguanasCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('iguanas');
     };
@@ -161,12 +177,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('iguanas');
     };
-    donations.get('iguanas').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('iguanas').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('JaguarsCtrl', function ($scope, $http, send, donations) {
+  .controller('JaguarsCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('jaguars');
     };
@@ -176,12 +194,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('jaguars');
     };
-    donations.get('jaguars').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('jaguars').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('KoalasCtrl', function ($scope, $http, send, donations) {
+  .controller('KoalasCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('koalas');
     };
@@ -191,12 +211,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('koalas');
     };
-    donations.get('koalas').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('koalas').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('LlamasCtrl', function ($scope, $http, send, donations) {
+  .controller('LlamasCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('llamas');
     };
@@ -206,12 +228,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('llamas');
     };
-    donations.get('llamas').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('llamas').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('MonkeysCtrl', function ($scope, $http, send, donations) {
+  .controller('MonkeysCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('monkeys');
     };
@@ -221,12 +245,14 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('monkeys');
     };
-    donations.get('monkeys').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('monkeys').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
-  .controller('NewtsCtrl', function ($scope, $http, send, donations) {
+  .controller('NewtsCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
       send.bronze('newts');
     };
@@ -236,8 +262,10 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('newts');
     };
-    donations.get('newts').then(function(response) {
-      $scope.donations = response.data.donations;
-      $scope.raised = response.data.raised;
-    });
+    $interval(function() {
+      donations.get('newts').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   });
