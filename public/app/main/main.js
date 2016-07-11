@@ -11,9 +11,9 @@ angular.module('fundMe')
       team: 'Bluetooth Badgers',
       state: 'badgers'
     },{
-      name: 'Cloud Camels Project',
-      team: 'Cloud Camels',
-      state: 'camels'
+      name: 'Cloud Cows Project',
+      team: 'Cloud Cows',
+      state: 'cows'
     },{
       name: 'Data Dogs Project',
       team: 'Data Dogs',
@@ -31,9 +31,9 @@ angular.module('fundMe')
       team: 'Gaming Gorillas',
       state: 'gorillas'
     },{
-      name: 'Hardware Hippos Project',
-      team: 'Hardware Hippos',
-      state: 'hippos'
+      name: 'Hardware Hens Project',
+      team: 'Hardware Hens',
+      state: 'hens'
     },{
       name: 'Internet Iguanas Project',
       team: 'Internet Iguanas',
@@ -51,12 +51,12 @@ angular.module('fundMe')
       team: 'Laser Llamas',
       state: 'llamas'
     },{
-      name: 'Mainframe Monkeys Project',
-      team: 'Mainframe Monkeys',
+      name: 'Mobile Monkeys Project',
+      team: 'Mobile Monkeys',
       state: 'monkeys'
     },{
-      name: 'Network Newts Project',
-      team: 'Network Newts',
-      state: 'newts'
+      name: 'Network Narwhals Project',
+      team: 'Network Narwhals',
+      state: 'narwhals'
     }];
   }]);

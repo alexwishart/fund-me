@@ -68,23 +68,23 @@ var app = angular.module('fundMe', [
         }
       }
     })
-    .state('camels', {
-      url: '/camels',
+    .state('cows', {
+      url: '/cows',
       views: {
         '': {
-          templateUrl: 'app/projects/camels/home.html',
+          templateUrl: 'app/projects/cows/home.html',
           controller: 'CamelsCtrl'
         },
-        'about@camels': {
-          templateUrl: 'app/projects/camels/about.html',
+        'about@cows': {
+          templateUrl: 'app/projects/cows/about.html',
           controller: 'CamelsCtrl'
          },
-        'raised@camels': {
-          templateUrl: 'app/projects/camels/raised.html',
+        'raised@cows': {
+          templateUrl: 'app/projects/cows/raised.html',
           controller: 'CamelsCtrl'
         },
-        'donate@camels': {
-          templateUrl: 'app/projects/camels/donate.html',
+        'donate@cows': {
+          templateUrl: 'app/projects/cows/donate.html',
           controller: 'CamelsCtrl'
         }
       }
@@ -173,23 +173,23 @@ var app = angular.module('fundMe', [
         }
       }
     })
-    .state('hippos', {
-      url: '/hippos',
+    .state('hens', {
+      url: '/hens',
       views: {
         '': {
-          templateUrl: 'app/projects/hippos/home.html',
+          templateUrl: 'app/projects/hens/home.html',
           controller: 'HipposCtrl'
         },
-        'about@hippos': {
-          templateUrl: 'app/projects/hippos/about.html',
+        'about@hens': {
+          templateUrl: 'app/projects/hens/about.html',
           controller: 'HipposCtrl'
          },
-        'raised@hippos': {
-          templateUrl: 'app/projects/hippos/raised.html',
+        'raised@hens': {
+          templateUrl: 'app/projects/hens/raised.html',
           controller: 'HipposCtrl'
         },
-        'donate@hippos': {
-          templateUrl: 'app/projects/hippos/donate.html',
+        'donate@hens': {
+          templateUrl: 'app/projects/hens/donate.html',
           controller: 'HipposCtrl'
         }
       }
@@ -299,23 +299,23 @@ var app = angular.module('fundMe', [
         }
       }
     })
-    .state('newts', {
-      url: '/newts',
+    .state('narwhals', {
+      url: '/narwhals',
       views: {
         '': {
-          templateUrl: 'app/projects/newts/home.html',
+          templateUrl: 'app/projects/narwhals/home.html',
           controller: 'NewtsCtrl'
         },
-        'about@newts': {
-          templateUrl: 'app/projects/newts/about.html',
+        'about@narwhals': {
+          templateUrl: 'app/projects/narwhals/about.html',
           controller: 'NewtsCtrl'
          },
-        'raised@newts': {
-          templateUrl: 'app/projects/newts/raised.html',
+        'raised@narwhals': {
+          templateUrl: 'app/projects/narwhals/raised.html',
           controller: 'NewtsCtrl'
         },
-        'donate@newts': {
-          templateUrl: 'app/projects/newts/donate.html',
+        'donate@narwhals': {
+          templateUrl: 'app/projects/narwhals/donate.html',
           controller: 'NewtsCtrl'
         }
       }
