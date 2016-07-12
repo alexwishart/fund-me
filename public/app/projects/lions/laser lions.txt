@@ -1,0 +1,2 @@
+{{donations}} Donations So Far
+£{{raised}} Raised So Far 
