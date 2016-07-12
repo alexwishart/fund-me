@@ -8,7 +8,7 @@
  * Controller of the fundmeApp
  */
 angular.module('fundMe')
-  .controller('Project1Ctrl', function ($scope, $http, send, donations) {
+  .controller('Project1Ctrl', function ($scope, $http, $interval, send, donations) {
     var teamName = 'project1';
 
     $scope.sendBronze = function() {
@@ -20,16 +20,12 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold(teamName);
     };
-    donations.get().then(function(response) {
-      console.log(response);
-
-      for (var i = 0; i < response.data.length; ++i) {
-        if (response.data[i][0] === teamName) {
-          $scope.raised = response.data[i][1];
-        }
-      }
-
-    });
+    $interval(function() {
+      donations.get('project1').then(function(response) {
+        $scope.donations = response.data.donations || 0;
+        $scope.raised = response.data.raised || 0;
+      });
+    }, 2000);
   })
   .controller('AardvarksCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
