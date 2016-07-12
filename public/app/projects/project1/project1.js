@@ -22,8 +22,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('project1').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === teamName) {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -39,8 +43,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('aardvarks').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'aardvarks') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -56,8 +64,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('badgers').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'badgers') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -73,8 +85,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('camels').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'camels') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -90,8 +106,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('dogs').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'dogs') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -107,8 +127,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('elephants').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'elephants') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -124,8 +148,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('foxes').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'foxes') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -141,8 +169,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('gorillas').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'gorillas') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -158,8 +190,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('hippos').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'hippos') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -175,8 +211,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('iguanas').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'iguanas') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -192,8 +232,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('jaguars').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'jaguars') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -209,8 +253,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('koalas').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'koalas') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -226,8 +274,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('llamas').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'llamas') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -243,8 +295,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('monkeys').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'monkeys') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   })
@@ -260,8 +316,12 @@ angular.module('fundMe')
     };
     $interval(function() {
       donations.get('newts').then(function(response) {
-        $scope.donations = response.data.donations || 0;
-        $scope.raised = response.data.raised || 0;
+        for (var i = 0; i < response.data.length; ++i) {
+          if (response.data[i][0] === 'newts') {
+            $scope.raised = response.data[i][1] || 0;
+            $scope.donations = 'Unknown';
+          }
+        }
       });
     }, 2000);
   });
