@@ -224,21 +224,21 @@ var app = angular.module('fundMe', [
         }
       }
     })
-    .state('llamas', {
-      url: '/llamas',
+    .state('lions', {
+      url: '/lions',
       views: {
         '': {
-          templateUrl: 'app/projects/llamas/home.html',
+          templateUrl: 'app/projects/lions/home.html',
           controller: 'LlamasCtrl'
         },
-        'about@llamas': {
-          templateUrl: 'app/projects/llamas/about.html'
+        'about@lions': {
+          templateUrl: 'app/projects/lions/about.html'
          },
-        'raised@llamas': {
-          templateUrl: 'app/projects/llamas/raised.html'
+        'raised@lions': {
+          templateUrl: 'app/projects/lions/raised.html'
         },
-        'donate@llamas': {
-          templateUrl: 'app/projects/llamas/donate.html'
+        'donate@lions': {
+          templateUrl: 'app/projects/lions/donate.html'
         }
       }
     })
