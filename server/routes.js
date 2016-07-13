@@ -1,9 +1,6 @@
-var path = require('path');
-var errors = require('./components/errors');
-
+"use strict";
 
 module.exports = function(app) {
-
     // Insert routes below
-    app.use('/api/endpoint', require('./api/endpoint'));
+    app.use('/votes', require('./api/endpoint'));
 };

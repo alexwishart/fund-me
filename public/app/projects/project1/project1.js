@@ -20,16 +20,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold(teamName);
     };
-    $interval(function() {
-      donations.get('project1').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === teamName) {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('AardvarksCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -41,16 +43,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('aardvarks');
     };
-    $interval(function() {
-      donations.get('aardvarks').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'aardvarks') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('BadgersCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -62,16 +66,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('badgers');
     };
-    $interval(function() {
-      donations.get('badgers').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'badgers') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('CamelsCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -83,16 +89,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('camels');
     };
-    $interval(function() {
-      donations.get('camels').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'camels') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('DogsCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -125,16 +133,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('elephants');
     };
-    $interval(function() {
-      donations.get('elephants').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'elephants') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('FoxesCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -146,16 +156,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('foxes');
     };
-    $interval(function() {
-      donations.get('foxes').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'foxes') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('GorillasCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -167,16 +179,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('gorillas');
     };
-    $interval(function() {
-      donations.get('gorillas').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'gorillas') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('HipposCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -188,16 +202,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('hippos');
     };
-    $interval(function() {
-      donations.get('hippos').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'hippos') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('IguanasCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -209,16 +225,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('iguanas');
     };
-    $interval(function() {
-      donations.get('iguanas').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'iguanas') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('JaguarsCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -230,16 +248,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('jaguars');
     };
-    $interval(function() {
-      donations.get('jaguars').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'jaguars') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('KoalasCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -251,16 +271,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('koalas');
     };
-    $interval(function() {
-      donations.get('koalas').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'koalas') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('LlamasCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -272,16 +294,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('llamas');
     };
-    $interval(function() {
-      donations.get('llamas').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'llamas') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('MonkeysCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -293,16 +317,18 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('monkeys');
     };
-    $interval(function() {
-      donations.get('monkeys').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'monkeys') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   })
   .controller('NewtsCtrl', function ($scope, $http, $interval, send, donations) {
     $scope.sendBronze = function() {
@@ -314,14 +340,16 @@ angular.module('fundMe')
     $scope.sendGold = function() {
       send.gold('newts');
     };
-    $interval(function() {
-      donations.get('newts').then(function(response) {
-        for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'newts') {
-            $scope.raised = response.data[i][1] || 0;
-            $scope.donations = 'Unknown';
-          }
-        }
+    var fun = function() {
+      donations.get().then(function successCallback(response) {
+        var bronze = (response.data.match(/bronze/g) || []).length;
+        var silver = (response.data.match(/silver/g) || []).length;
+        var gold = (response.data.match(/gold/g) || []).length;
+
+        $scope.raised = bronze * 50 + silver * 100 + gold * 150 || 0;
+        $scope.numDonations = bronze + silver + gold;
       });
-    }, 2000);
+    };
+    fun();
+    $interval(fun, 5000);
   });

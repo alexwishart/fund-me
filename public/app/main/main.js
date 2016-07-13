@@ -47,9 +47,9 @@ angular.module('fundMe')
       team: 'Keyboard Koalas',
       state: 'koalas'
     },{
-      name: 'Laser Llamas Project',
-      team: 'Laser Llamas',
-      state: 'llamas'
+      name: 'Laser Lions Project',
+      team: 'Laser Lions',
+      state: 'lions'
     },{
       name: 'Mobile Monkeys Project',
       team: 'Mobile Monkeys',

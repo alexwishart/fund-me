@@ -9,13 +9,12 @@
  */
 angular.module('fundMe')
   .service('donations', function ($http) {
-    // var url = 'http://thinkit2016.mybluemix.net/votes.json';
-    var url = 'http://anna-nr.mybluemix.net/getVotes';
+    // var url = 'http://anna-nr.mybluemix.net/getVotes';
 
-    var get = function(team) {
+    var get = function() {
       return $http({
         method: 'GET',
-        url: url
+        url: '/votes'
       });
     };
 
