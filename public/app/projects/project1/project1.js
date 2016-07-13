@@ -86,7 +86,7 @@ angular.module('fundMe')
     $interval(function() {
       donations.get('camels').then(function(response) {
         for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'camels') {
+          if (response.data[i][0] === 'cows') {
             $scope.raised = response.data[i][1] || 0;
             $scope.donations = 'Unknown';
           }
@@ -191,7 +191,7 @@ angular.module('fundMe')
     $interval(function() {
       donations.get('hippos').then(function(response) {
         for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'hippos') {
+          if (response.data[i][0] === 'hens') {
             $scope.raised = response.data[i][1] || 0;
             $scope.donations = 'Unknown';
           }
@@ -275,7 +275,7 @@ angular.module('fundMe')
     $interval(function() {
       donations.get('llamas').then(function(response) {
         for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'llamas') {
+          if (response.data[i][0] === 'lions') {
             $scope.raised = response.data[i][1] || 0;
             $scope.donations = 'Unknown';
           }
@@ -317,7 +317,7 @@ angular.module('fundMe')
     $interval(function() {
       donations.get('newts').then(function(response) {
         for (var i = 0; i < response.data.length; ++i) {
-          if (response.data[i][0] === 'newts') {
+          if (response.data[i][0] === 'narwhals') {
             $scope.raised = response.data[i][1] || 0;
             $scope.donations = 'Unknown';
           }
