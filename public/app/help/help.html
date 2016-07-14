@@ -121,17 +121,8 @@
   </div>
   <div class="col-md-6">
     <pre><code>&lt;img src=&quot;images/rubix.png&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;</code></pre>
-  </div>
-</div>
 
-<hr>
-
-<div class="row">
-  <div class="col-md-6">
-    5 donations so far!
-  </div>
-  <div class="col-md-6">
-    <pre><code ng-non-bindable>{{donations}} donations so far!</code></pre>
+    <p>Images need to be saved in <code>Documents/fund-me/images</code></p>
   </div>
 </div>
 
@@ -142,10 +133,151 @@
     £25 raised
   </div>
   <div class="col-md-6">
-    <pre><code ng-non-bindable>£{{raised}} raised</code></pre>
+    <pre><code ng-non-bindable>&lt;p&gt;£{{raised}} raised&lt;/p&gt;</code></pre>
   </div>
 </div>
 
+<hr>
 
+<div class="row">
+  <div class="col-md-6">
+    5 people donated money!
+  </div>
+  <div class="col-md-6">
+    <pre><code ng-non-bindable>&lt;p&gt;{{numDonated}} people donated money!&lt;/p&gt;</code></pre>
+  </div>
+</div>
 
+<hr>
 
+<div class="center">
+  <h3>You can add the attribute <code>style</code> to any tag to change how it looks.</h3>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-6">
+    <p style="color: #0000ff;">Text colour</p>
+  </div>
+  <div class="col-md-6">
+    <pre><code>&lt;p style="color: blue;"&gt;Text colour&lt;/p&gt;</code></pre>
+    <pre><code>&lt;p style="color: #0000ff;"&gt;Text colour&lt;/p&gt;</code></pre>
+    <p>You can use colour names or hex values</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-6">
+    <p style="font-size: 25px;">Font size</p>
+  </div>
+  <div class="col-md-6">
+    <pre><code>&lt;p style="font-size: 25px;"&gt;Font size&lt;/p&gt;</code></pre>
+    <p><code>px</code> means pixels, you can enter any number to change the size</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-6">
+    <p style="background-color: #ffff00;">Background colour</p>
+  </div>
+  <div class="col-md-6">
+    <pre><code>&lt;p style="background-color: yellow;"&gt;Background colour&lt;/p&gt;</code></pre>
+    <pre><code>&lt;p style="background-color: #ffff00;"&gt;Background colour&lt;/p&gt;</code></pre>
+    <p>You can use colour names or hex values</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-6">
+    <p style="border: 1px solid black;">Border</p>
+    <p style="border: 5px dashed #ff0000;">Border</p>
+  </div>
+  <div class="col-md-6">
+    <pre><code>&lt;p style="border: 1px solid black;"&gt;Border&lt;/p&gt;</code></pre>
+    <pre><code>&lt;p style="border: 5px dashed #ff0000;"&gt;Border&lt;/p&gt;</code></pre>
+    <p>You can change the width, style and colour</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-6">
+    <p style="border: 1px solid black; padding: 10px;">Padding</p>
+  </div>
+  <div class="col-md-6">
+    <pre><code>&lt;p style="border: 1px solid black; padding: 10px;"&gt;Padding&lt;/p&gt;</code></pre>
+    <p>Adding padding changes the spacing <strong>between</strong> the text and the border</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-6">
+    <p style="border: 1px solid black; width: 100px;">Width</p>
+  </div>
+  <div class="col-md-6">
+    <pre><code>&lt;p style="border: 1px solid black; width: 100px;"&gt;Width&lt;/p&gt;</code></pre>
+    <p>Change the width using a pixels value <code>px</code></p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-6">
+    <p style="border: 1px solid black; width: 100px; float: left">Floating</p>
+    <p style="border: 1px solid black; width: 100px; float: left">Floating</p>
+  </div>
+  <div class="col-md-6">
+    <pre><code>&lt;p style="border: 1px solid black; width: 100px; float: left;"&gt;Floating&lt;/p&gt;
+
+&lt;p style="border: 1px solid black; width: 100px; float: left;"&gt;Floating&lt;/p&gt;
+</code></pre>
+    <p>Float causes tags to move next to each other</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-6">
+    <p style="border: 1px solid black; width: 100px; float: left">No margin</p>
+    <p style="border: 1px solid black; width: 100px; float: left; margin-left: 50px;">Margin</p>
+  </div>
+  <div class="col-md-6">
+    <pre><code>&lt;p style="border: 1px solid black; width: 100px; float: left;"&gt;No margin&lt;/p&gt;
+
+&lt;p style="border: 1px solid black; width: 100px; float: left; margin-left: 50px;"&gt;Margin&lt;/p&gt;
+</code></pre>
+    <p>Adding margins changes the spacing <strong>outside</strong> the border</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="center">
+  <h1>Git Commands</h1>
+</div>
+
+<hr>
+
+<pre><code>git pull origin master</code></pre>
+
+<pre><code>git status</code></pre>
+
+<pre><code>git add &lt;file_name&gt;</code></pre>
+
+<p>Do not add the file <code>votes.txt</code></p>
+
+<pre><code>git commit -m &quot;&lt;team_name&gt;&quot;</code></pre>
+
+<pre><code>git push</code></pre>

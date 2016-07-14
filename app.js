@@ -24,7 +24,7 @@ var io = require('socket.io')(server);
 app.io = io;
 
 // require
-//require('./server/routes')(app);
+require('./server/routes')(app);
 
 // serve the files out of ./public as our main files
 //app.use(express.static(__dirname + '/public'));
